@@ -1,0 +1,16 @@
+@media only screen and (max-width: 420px) {
+    .uk-navbar-container {
+        display: none;
+    }
+}
+
+.uk-navbar-container {
+    background-color: white !important;
+}
+
+.uk-navbar-nav li a {
+    color: black;
+}
+body{
+   padding: 75px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+<style>
+h2{
+    margin-top: 60px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+    <div class="uk-container">
+
+        <h2>Navbar</h2>
+        <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav ">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="uk-container">
+        <h2>Grid</h2>
+        <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container ">
+        <h2>Form</h2>
+        <form>
+            <fieldset class="uk-fieldset">
+
+
+
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Input">
+                </div>
+
+                <div class="uk-margin">
+                    <select class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+                    <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+                </div>
+
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                    <label><input class="uk-checkbox" type="checkbox"> B</label>
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="uk-container">
+        <h2>Button</h2>
+        <p uk-margin>
+            <a class="uk-button uk-button-default" href="#">Link</a>
+            <button class="uk-button uk-button-default">Button</button>
+            <button class="uk-button uk-button-default" disabled>Disabled</button>
+        </p>
+
+    </div>
+
+    <div class="uk-container">
+        <h2>Icon</h2>
+        <span class="uk-margin-small-right" uk-icon="folder"></span>
+        <a href="" uk-icon="album"></a>
+    </div>
+
+    <div class="uk-container">
+        <h2>Modal</h2>
+        <!-- This is a button toggling the modal -->
+        <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Open</button>
+
+        <!-- This is an anchor toggling the modal -->
+        <a href="#modal-example" uk-toggle>Open</a>
+
+        <!-- This is the modal -->
+        <div id="modal-example" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="uk-container">
+        <h2>Badge</h2>
+        <span class="uk-badge">1</span>
+        <span class="uk-badge">100</span>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
